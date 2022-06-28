@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <header class="p">
+            <lightning-icon icon-name={icon} size="small"></lightning-icon>
+            <h3><strong>{title}</strong></h3>
+            <lightning-icon icon-name="utility:info" size="xx-small" title={description} class="slds-m-left_x-small"></lightning-icon>
+        </header>
+        <main>
+            <hr>
+            <div>
+                <slot></slot>
+            </div>
+            <hr>
+        </main>
+        <footer class="p">
+            <p>{footer}</p>
+        </footer>
+    </lightning-card>
+</template>

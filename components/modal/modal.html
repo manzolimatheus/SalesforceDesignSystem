@@ -1,0 +1,9 @@
+<template>
+	<template if:true={open}>
+		<main class="slds-modal slds-fade-in-open">
+			<p class="closeButton" onclick={closeModal}><lightning-icon icon-name="utility:close" alternative-text="Fechar Janela" ></lightning-icon> Fechar Janela</p>
+			<slot></slot>
+		</main>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>
