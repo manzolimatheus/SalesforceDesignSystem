@@ -1,0 +1,11 @@
+<template>
+    <c-card title="Me mostra algo fofo!" description="Mostrando algo realmente fofo" footer="Clique e descubra!">
+        <main style="text-align: center">
+            <c-button onclick={toggleModal} shape="rounded">Mostre-me! 🐱</c-button>
+            <c-button onclick={toggleModal} shape="rect" bgcolor="tomato">Mostre-me! 🐱</c-button>
+        </main>
+    </c-card>
+    <c-modal open={modalOpen}>
+        <img src="https://i.pinimg.com/originals/74/e9/cb/74e9cbb3ea62e9b44e39ace1cc4fdad7.png" alt="Gatinho" style="width: 100%; height: 80%; object-fit:cover"/>
+    </c-modal>
+</template>
